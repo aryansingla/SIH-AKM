@@ -1,0 +1,60 @@
+.container {
+  min-width: 100%;
+  background-color: black;
+  color: white;
+}
+.text {
+  display: flex;
+  padding: 20px;
+}
+.items {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 60%;
+}
+.list {
+  color: white;
+  font-size: 25px;
+  width: 25%;
+}
+
+#facebook {
+  height: 30px;
+  width: 30px;
+  margin-left: 90px;
+  cursor: pointer;
+}
+#Insta {
+  height: 30px;
+  width: 30px;
+  margin-left: 40px;
+  cursor: pointer;
+}
+#Twitter {
+  height: 30px;
+  width: 30px;
+  margin-left: 40px;
+  cursor: pointer;
+}
+#Linkedin {
+  height: 30px;
+  width: 30px;
+  margin-left: 40px;
+  cursor: pointer;
+}
+#line {
+  height: 1px;
+  border: none;
+  width: 90%;
+  margin-left: 75px;
+  background-color: white;
+}
+.logo {
+  margin-left: 35%;
+}
+#copyright {
+  padding-top: px;
+  margin-left: 460px;
+  font-size: 1.5em;
+  padding: 50px;
+}

@@ -1,0 +1,12 @@
+#accordionExample {
+  position: relative;
+}
+
+button a {
+  text-decoration: none;
+}
+
+.foot {
+  margin-top: 100px;
+  position: relative;
+}
