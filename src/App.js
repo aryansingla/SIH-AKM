@@ -7,6 +7,7 @@ import Password from "./components/Password.js";
 import ProtectedRoute from "./components/routes/protectedRoute.js";
 import UnprotectedRoute from "./components/routes/unprotectedRoute.js";
 import LoginRoute from "./components/routes/loginRoute.js";
+import ProfilePage from "./components/ProfilePage.js";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 function App() {
@@ -33,6 +34,10 @@ function App() {
           <unprotectedRoute exact path="/signup">
             <Password />
           </unprotectedRoute>
+
+          <ProtectedRoute exact path="/profile">
+            <ProfilePage />
+          </ProtectedRoute>
         </Switch>
       </Router>
     </div>

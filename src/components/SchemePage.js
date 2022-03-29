@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import SchemeInfo from "./SchemeInfo";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import "./SchemePage.css";
 import { useEffect, useState } from "react";
 import ApiService from "../service/apiService";
@@ -57,6 +57,11 @@ const SchemePage = ({
       <div className="Scheme-top">
         <Ctitle>
           Schemes
+          <ProfileButton>
+            <a>
+              <Link to="/profile">Go to Profile</Link>
+            </a>
+          </ProfileButton>
           <SchemeTop>
             <div class="dropdown mx-2">
               <button
@@ -182,6 +187,15 @@ const Dropdown = styled.div`
 const SchemeTop = styled.div`
   display: flex;
   justify-content: space-between;
+`;
+
+const ProfileButton = styled.div`
+  font-size: 20px;
+  background-color: rgb(3 105 161);
+  color: white;
+  padding: 7px;
+  border-radius: 10px;
+  margin-left: 70%;
 `;
 
 const mapStateToProps = (state) => {
